@@ -1,6 +1,6 @@
-
 import HeroSection from "./herosection";
 import Navbar from "./navbar";
+import PricingPlans from "./plans";
 import WhyChooseUs from "./whychooseus";
 
 function Home() {
@@ -9,6 +9,7 @@ function Home() {
       <Navbar />
       <HeroSection />
       <WhyChooseUs />
+      <PricingPlans />
     </>
   );
 }

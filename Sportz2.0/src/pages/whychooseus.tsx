@@ -2,10 +2,10 @@ import type React from "react";
 
 const WhyChooseUs: React.FC = () => {
   return (
-    <section className="bg-[#fff9e6] py-16 px-12 md:px-8 rounded-xl max-w-7xl mt-6 mx-auto mb-6">
+    <section className="bg-[#FFF8DA] py-16 px-12 md:px-8 rounded-2xl max-w-5xl mt-6 mx-auto mb-6">
       <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row gap-8 items-center">
-          <div className="w-full md:w-1/2">
+        <div className="flex flex-col md:flex-row gap-28 items-center">
+          <div className="w-full md:w-1/2 px-4">
             <h3 className="text-red-600 font-medium text-xl mb-3">
               Why Choose Us
             </h3>
@@ -26,9 +26,9 @@ const WhyChooseUs: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="w-full md:w-1/2">
+          <div className="w-1/2 md:w-1/3">
             <img
-              src="https://source.unsplash.com/random/800x600/?soccer,ball,goal"
+              src="/src/assets/images/chooseus.png"
               alt="Soccer ball in goal net"
               className="w-full h-auto rounded-lg shadow-md"
             />
