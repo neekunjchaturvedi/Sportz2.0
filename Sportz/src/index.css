@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+:root {
+  --font-raleway: "Raleway", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+.dark {
+  --background-color: #242424;
+  --text-color: #ffffff;
+}
+
+body {
+  font-family: var(--font-raleway);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.navbar {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
