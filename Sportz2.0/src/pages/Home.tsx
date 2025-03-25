@@ -1,3 +1,4 @@
+import ContactForm from "./contact";
 import HeroSection from "./herosection";
 import Navbar from "./navbar";
 import PricingPlans from "./plans";
@@ -10,6 +11,7 @@ function Home() {
       <HeroSection />
       <WhyChooseUs />
       <PricingPlans />
+      <ContactForm />
     </>
   );
 }

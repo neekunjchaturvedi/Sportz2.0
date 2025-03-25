@@ -2,9 +2,9 @@ import type React from "react";
 
 const WhyChooseUs: React.FC = () => {
   return (
-    <section className="bg-[#FFF8DA] py-16 px-12 md:px-8 rounded-2xl max-w-5xl mt-6 mx-auto mb-6">
+    <section className="bg-[#FFF8DA] py-6 px-12 md:px-8 rounded-2xl max-w-5xl mt-6 mx-auto mb-6 ">
       <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row gap-28 items-center">
+        <div className="flex flex-col md:flex-row md:gap-28 items-center">
           <div className="w-full md:w-1/2 px-4">
             <h3 className="text-red-600 font-medium text-xl mb-3">
               Why Choose Us
@@ -26,7 +26,7 @@ const WhyChooseUs: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="w-1/2 md:w-1/3">
+          <div className="w-1/2 md:w-1/3 hidden md:block">
             <img
               src="/src/assets/images/chooseus.png"
               alt="Soccer ball in goal net"

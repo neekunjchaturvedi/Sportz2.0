@@ -50,42 +50,43 @@ export default function Navbar() {
           >
             Logo
           </button>
+          <div className="w-1/2 flex justify-between">
+            <nav className="hidden md:flex items-center space-x-12">
+              {["Home", "About", "Features", "Pricing", "Contact Us"].map(
+                (item) => (
+                  <button
+                    key={item}
+                    onClick={() =>
+                      handleNavigate(`/${item.toLowerCase().replace(" ", "")}`)
+                    }
+                    className={`font-medium ${
+                      scrolled ? "text-gray-800" : "text-white"
+                    }`}
+                  >
+                    {item}
+                  </button>
+                )
+              )}
+            </nav>
 
-          <nav className="hidden md:flex items-center space-x-12">
-            {["Home", "About", "Features", "Pricing", "Contact Us"].map(
-              (item) => (
-                <button
-                  key={item}
-                  onClick={() =>
-                    handleNavigate(`/${item.toLowerCase().replace(" ", "")}`)
-                  }
-                  className={`font-medium ${
-                    scrolled ? "text-gray-800" : "text-white"
-                  }`}
-                >
-                  {item}
-                </button>
-              )
-            )}
-          </nav>
-
-          <div className="flex items-center space-x-4">
-            <button
-              className={`hidden md:inline-flex px-4 py-2 rounded-md font-medium ${
-                scrolled
-                  ? "text-gray-800 hover:bg-gray-100"
-                  : "text-white hover:bg-white/10"
-              }`}
-              onClick={() => handleNavigate("/login")}
-            >
-              Log In
-            </button>
-            <button
-              className="px-4 py-2 rounded-md font-medium bg-red-500 hover:bg-red-600 text-white"
-              onClick={() => handleNavigate("/signup")}
-            >
-              Sign Up
-            </button>
+            <div className="flex items-center space-x-4">
+              <button
+                className={`hidden md:inline-flex px-4 py-2 rounded-md font-medium ${
+                  scrolled
+                    ? "text-gray-800 hover:bg-gray-100"
+                    : "text-white hover:bg-white/10"
+                }`}
+                onClick={() => handleNavigate("/login")}
+              >
+                Log In
+              </button>
+              <button
+                className="ml-24 md:ml-0 px-4 py-2 rounded-md font-medium bg-red-500 hover:bg-red-600 text-white"
+                onClick={() => handleNavigate("/signup")}
+              >
+                Sign Up
+              </button>
+            </div>
 
             {/* Mobile menu button */}
             <button
