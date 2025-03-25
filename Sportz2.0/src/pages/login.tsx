@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 // import axios from "axios";
 
@@ -73,14 +73,15 @@ const Login: React.FC = () => {
       <img
         src="/src/assets/images/Footballlogin.png"
         alt="Football"
-        class="absolute inset-0 w-full h-full object-cover"
-        // style={
-        //   "background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));"
-        // }
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{
+          background:
+            "linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0))",
+        }}
       />
 
       {/* Overlay for better text visibility */}
-      <div className="absolute inset-0 "></div>
+      <div className="absolute inset-0  bg-opacity-50"></div>
 
       {/* Left Side - Welcome Text */}
       <div className="relative text-center lg:text-left text-white z-10 lg:w-1/2 px-6 lg:px-0 mb-8 sm:mb-12 flex flex-col justify-between">
